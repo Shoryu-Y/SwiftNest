@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		34174CB82A7FEE81003A41D0 /* Nest in Frameworks */ = {isa = PBXBuildFile; productRef = 34174CB72A7FEE81003A41D0 /* Nest */; };
+		34174CD82A7FF0DF003A41D0 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34A15CD82A792A8D006736AB /* WidgetKit.framework */; };
+		34174CD92A7FF0DF003A41D0 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34A15CDA2A792A8D006736AB /* SwiftUI.framework */; };
+		34174CDE2A7FF0DF003A41D0 /* NestWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34174CDD2A7FF0DF003A41D0 /* NestWidgetLiveActivity.swift */; };
+		34174CE02A7FF0DF003A41D0 /* NestWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34174CDF2A7FF0DF003A41D0 /* NestWidget.swift */; };
+		34174CE22A7FF0DF003A41D0 /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34174CE12A7FF0DF003A41D0 /* AppIntent.swift */; };
+		34174CE82A7FF0E1003A41D0 /* NestWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 34174CD72A7FF0DF003A41D0 /* NestWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		34174CED2A7FF156003A41D0 /* WidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34174CEC2A7FF156003A41D0 /* WidgetBundle.swift */; };
+		34174CF12A7FF29F003A41D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34174CF02A7FF29F003A41D0 /* Assets.xcassets */; };
 		344514F12A77F2B90023C68D /* SwiftNestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344514F02A77F2B90023C68D /* SwiftNestApp.swift */; };
 		344514F32A77F2B90023C68D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344514F22A77F2B90023C68D /* ContentView.swift */; };
 		344514F52A77F2BC0023C68D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 344514F42A77F2BC0023C68D /* Assets.xcassets */; };
@@ -17,6 +26,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		34174CE62A7FF0E1003A41D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 344514E52A77F2B90023C68D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 34174CD62A7FF0DF003A41D0;
+			remoteInfo = NestWidgetExtension;
+		};
 		344514FE2A77F2BC0023C68D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 344514E52A77F2B90023C68D /* Project object */;
@@ -33,7 +49,28 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		34A15CEE2A792A8F006736AB /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				34174CE82A7FF0E1003A41D0 /* NestWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		34174CD72A7FF0DF003A41D0 /* NestWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NestWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		34174CDD2A7FF0DF003A41D0 /* NestWidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NestWidgetLiveActivity.swift; sourceTree = "<group>"; };
+		34174CDF2A7FF0DF003A41D0 /* NestWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NestWidget.swift; sourceTree = "<group>"; };
+		34174CE12A7FF0DF003A41D0 /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
+		34174CE52A7FF0E1003A41D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34174CEC2A7FF156003A41D0 /* WidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetBundle.swift; sourceTree = "<group>"; };
+		34174CF02A7FF29F003A41D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		344514ED2A77F2B90023C68D /* SwiftNest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftNest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		344514F02A77F2B90023C68D /* SwiftNestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftNestApp.swift; sourceTree = "<group>"; };
 		344514F22A77F2B90023C68D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,13 +81,25 @@
 		344515072A77F2BC0023C68D /* SwiftNestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftNestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3445150B2A77F2BC0023C68D /* SwiftNestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftNestUITests.swift; sourceTree = "<group>"; };
 		3445150D2A77F2BC0023C68D /* SwiftNestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftNestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		34A15CD82A792A8D006736AB /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		34A15CDA2A792A8D006736AB /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		34174CD42A7FF0DF003A41D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34174CD92A7FF0DF003A41D0 /* SwiftUI.framework in Frameworks */,
+				34174CD82A7FF0DF003A41D0 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		344514EA2A77F2B90023C68D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34174CB82A7FEE81003A41D0 /* Nest in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,13 +120,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		34174CDA2A7FF0DF003A41D0 /* NestWidget */ = {
+			isa = PBXGroup;
+			children = (
+				34174CEC2A7FF156003A41D0 /* WidgetBundle.swift */,
+				34174CDF2A7FF0DF003A41D0 /* NestWidget.swift */,
+				34174CDD2A7FF0DF003A41D0 /* NestWidgetLiveActivity.swift */,
+				34174CE12A7FF0DF003A41D0 /* AppIntent.swift */,
+				34174CE52A7FF0E1003A41D0 /* Info.plist */,
+				34174CF02A7FF29F003A41D0 /* Assets.xcassets */,
+			);
+			path = NestWidget;
+			sourceTree = "<group>";
+		};
 		344514E42A77F2B90023C68D = {
 			isa = PBXGroup;
 			children = (
 				344514EF2A77F2B90023C68D /* SwiftNest */,
 				344515002A77F2BC0023C68D /* SwiftNestTests */,
 				3445150A2A77F2BC0023C68D /* SwiftNestUITests */,
+				34174CDA2A7FF0DF003A41D0 /* NestWidget */,
 				344514EE2A77F2B90023C68D /* Products */,
+				34A15CD02A7928FA006736AB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,6 +151,7 @@
 				344514ED2A77F2B90023C68D /* SwiftNest.app */,
 				344514FD2A77F2BC0023C68D /* SwiftNestTests.xctest */,
 				344515072A77F2BC0023C68D /* SwiftNestUITests.xctest */,
+				34174CD72A7FF0DF003A41D0 /* NestWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -127,9 +192,35 @@
 			path = SwiftNestUITests;
 			sourceTree = "<group>";
 		};
+		34A15CD02A7928FA006736AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				34A15CD82A792A8D006736AB /* WidgetKit.framework */,
+				34A15CDA2A792A8D006736AB /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		34174CD62A7FF0DF003A41D0 /* NestWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34174CEB2A7FF0E1003A41D0 /* Build configuration list for PBXNativeTarget "NestWidgetExtension" */;
+			buildPhases = (
+				34174CD32A7FF0DF003A41D0 /* Sources */,
+				34174CD42A7FF0DF003A41D0 /* Frameworks */,
+				34174CD52A7FF0DF003A41D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NestWidgetExtension;
+			productName = NestWidgetExtension;
+			productReference = 34174CD72A7FF0DF003A41D0 /* NestWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		344514EC2A77F2B90023C68D /* SwiftNest */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 344515112A77F2BC0023C68D /* Build configuration list for PBXNativeTarget "SwiftNest" */;
@@ -137,12 +228,17 @@
 				344514E92A77F2B90023C68D /* Sources */,
 				344514EA2A77F2B90023C68D /* Frameworks */,
 				344514EB2A77F2B90023C68D /* Resources */,
+				34A15CEE2A792A8F006736AB /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				34174CE72A7FF0E1003A41D0 /* PBXTargetDependency */,
 			);
 			name = SwiftNest;
+			packageProductDependencies = (
+				34174CB72A7FEE81003A41D0 /* Nest */,
+			);
 			productName = SwiftNest;
 			productReference = 344514ED2A77F2B90023C68D /* SwiftNest.app */;
 			productType = "com.apple.product-type.application";
@@ -193,6 +289,9 @@
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
+					34174CD62A7FF0DF003A41D0 = {
+						CreatedOnToolsVersion = 15.0;
+					};
 					344514EC2A77F2B90023C68D = {
 						CreatedOnToolsVersion = 15.0;
 					};
@@ -222,11 +321,20 @@
 				344514EC2A77F2B90023C68D /* SwiftNest */,
 				344514FC2A77F2BC0023C68D /* SwiftNestTests */,
 				344515062A77F2BC0023C68D /* SwiftNestUITests */,
+				34174CD62A7FF0DF003A41D0 /* NestWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		34174CD52A7FF0DF003A41D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34174CF12A7FF29F003A41D0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		344514EB2A77F2B90023C68D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -253,6 +361,17 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		34174CD32A7FF0DF003A41D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34174CE02A7FF0DF003A41D0 /* NestWidget.swift in Sources */,
+				34174CED2A7FF156003A41D0 /* WidgetBundle.swift in Sources */,
+				34174CE22A7FF0DF003A41D0 /* AppIntent.swift in Sources */,
+				34174CDE2A7FF0DF003A41D0 /* NestWidgetLiveActivity.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		344514E92A77F2B90023C68D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -282,6 +401,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		34174CE72A7FF0E1003A41D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 34174CD62A7FF0DF003A41D0 /* NestWidgetExtension */;
+			targetProxy = 34174CE62A7FF0E1003A41D0 /* PBXContainerItemProxy */;
+		};
 		344514FF2A77F2BC0023C68D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 344514EC2A77F2B90023C68D /* SwiftNest */;
@@ -295,6 +419,60 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		34174CE92A7FF0E1003A41D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TJ87VY5Q8W;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NestWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = NestWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.shoryu.SwiftNest.NestWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		34174CEA2A7FF0E1003A41D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TJ87VY5Q8W;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NestWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = NestWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.shoryu.SwiftNest.NestWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		3445150F2A77F2BC0023C68D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -417,6 +595,7 @@
 		344515122A77F2BC0023C68D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -446,6 +625,7 @@
 		344515132A77F2BC0023C68D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -551,6 +731,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		34174CEB2A7FF0E1003A41D0 /* Build configuration list for PBXNativeTarget "NestWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34174CE92A7FF0E1003A41D0 /* Debug */,
+				34174CEA2A7FF0E1003A41D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		344514E82A77F2B90023C68D /* Build configuration list for PBXProject "SwiftNest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -588,6 +777,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		34174CB72A7FEE81003A41D0 /* Nest */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Nest;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 344514E52A77F2B90023C68D /* Project object */;
 }
