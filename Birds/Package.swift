@@ -11,7 +11,11 @@ let package = Package(
             targets: ["Nest"]),
     ],
     targets: [
-        .target(name: "Nest"),
+        .target(
+            name: "Nest",
+            dependencies: ["AsyncValue"]
+        ),
+        .target(name: "AsyncValue"),
         .testTarget(
             name: "BirdsTests",
             dependencies: ["Nest"]),
