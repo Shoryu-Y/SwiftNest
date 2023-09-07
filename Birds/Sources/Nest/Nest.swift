@@ -2,9 +2,9 @@ import SwiftUI
 import AsyncValue
 
 public struct Nest: View {
-    @State var asyncValue = AsyncValue<Int>.isLoading
+    @State var asyncValue: AsyncValue = AsyncValue<Int>.loading()
     public init() {}
-    
+
     public var body: some View {
         VStack(spacing: 10) {
             asyncValue.when(
@@ -14,21 +14,21 @@ public struct Nest: View {
                 loading: {
                     return Text("loading")
                 },
-                error: { error in
+                error: { error, stackTrace in
                     return Text("error")
                 }
             )
 
             Button("data") {
-                asyncValue = AsyncValue.data(10)
+                asyncValue = AsyncData<Int>(10)
             }
 
             Button("isLoading") {
-                asyncValue = AsyncValue.isLoading
+                asyncValue = AsyncLoading<Int>()
             }
 
             Button("error") {
-                asyncValue = AsyncValue.error(0)
+                asyncValue = AsyncError<Int>(error: "error", stackTrace: "stackTrace")
             }
         }
     }
