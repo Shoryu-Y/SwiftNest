@@ -15,7 +15,7 @@ struct NestTimelineEntry: TimelineEntry {
     let displaySize: CGSize
 }
 
-struct Provider: AppIntentTimelineProvider {
+struct NestProvider: AppIntentTimelineProvider {
     func placeholder(in context: Context) -> NestTimelineEntry {
         NestTimelineEntry(
             date: Date(),

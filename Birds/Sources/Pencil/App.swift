@@ -1,10 +1,9 @@
 import SwiftUI
-import Pencil
 
-public struct Nest: View {
+public struct PencilApp: View {
     public init() {}
 
     public var body: some View {
-        NestView()
+        PencilInteractionView()
     }
 }

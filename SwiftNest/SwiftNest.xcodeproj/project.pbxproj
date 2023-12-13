@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3402025C2B29741200AD348A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3402025B2B29741200AD348A /* SceneDelegate.swift */; };
 		34174CB82A7FEE81003A41D0 /* Nest in Frameworks */ = {isa = PBXBuildFile; productRef = 34174CB72A7FEE81003A41D0 /* Nest */; };
 		34174CD82A7FF0DF003A41D0 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34A15CD82A792A8D006736AB /* WidgetKit.framework */; };
 		34174CD92A7FF0DF003A41D0 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34A15CDA2A792A8D006736AB /* SwiftUI.framework */; };
@@ -23,6 +24,8 @@
 		344515022A77F2BC0023C68D /* SwiftNestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344515012A77F2BC0023C68D /* SwiftNestTests.swift */; };
 		3445150C2A77F2BC0023C68D /* SwiftNestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3445150B2A77F2BC0023C68D /* SwiftNestUITests.swift */; };
 		3445150E2A77F2BC0023C68D /* SwiftNestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3445150D2A77F2BC0023C68D /* SwiftNestUITestsLaunchTests.swift */; };
+		3480D7892AAEA69C0050431A /* SampleWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3480D7882AAEA69C0050431A /* SampleWidget.swift */; };
+		34916A8B2AB18C620054F78A /* WidgetSource in Frameworks */ = {isa = PBXBuildFile; productRef = 34916A8A2AB18C620054F78A /* WidgetSource */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +67,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3402025B2B29741200AD348A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3402025D2B29765700AD348A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		34174CD72A7FF0DF003A41D0 /* NestWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NestWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		34174CDD2A7FF0DF003A41D0 /* NestWidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NestWidgetLiveActivity.swift; sourceTree = "<group>"; };
 		34174CDF2A7FF0DF003A41D0 /* NestWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NestWidget.swift; sourceTree = "<group>"; };
@@ -81,6 +86,7 @@
 		344515072A77F2BC0023C68D /* SwiftNestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftNestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3445150B2A77F2BC0023C68D /* SwiftNestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftNestUITests.swift; sourceTree = "<group>"; };
 		3445150D2A77F2BC0023C68D /* SwiftNestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftNestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3480D7882AAEA69C0050431A /* SampleWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleWidget.swift; sourceTree = "<group>"; };
 		34A15CD82A792A8D006736AB /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		34A15CDA2A792A8D006736AB /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -90,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34916A8B2AB18C620054F78A /* WidgetSource in Frameworks */,
 				34174CD92A7FF0DF003A41D0 /* SwiftUI.framework in Frameworks */,
 				34174CD82A7FF0DF003A41D0 /* WidgetKit.framework in Frameworks */,
 			);
@@ -129,6 +136,7 @@
 				34174CE12A7FF0DF003A41D0 /* AppIntent.swift */,
 				34174CE52A7FF0E1003A41D0 /* Info.plist */,
 				34174CF02A7FF29F003A41D0 /* Assets.xcassets */,
+				3480D7882AAEA69C0050431A /* SampleWidget.swift */,
 			);
 			path = NestWidget;
 			sourceTree = "<group>";
@@ -159,6 +167,8 @@
 		344514EF2A77F2B90023C68D /* SwiftNest */ = {
 			isa = PBXGroup;
 			children = (
+				3402025D2B29765700AD348A /* Info.plist */,
+				3402025B2B29741200AD348A /* SceneDelegate.swift */,
 				344514F02A77F2B90023C68D /* SwiftNestApp.swift */,
 				344514F22A77F2B90023C68D /* ContentView.swift */,
 				344514F42A77F2BC0023C68D /* Assets.xcassets */,
@@ -217,6 +227,9 @@
 			dependencies = (
 			);
 			name = NestWidgetExtension;
+			packageProductDependencies = (
+				34916A8A2AB18C620054F78A /* WidgetSource */,
+			);
 			productName = NestWidgetExtension;
 			productReference = 34174CD72A7FF0DF003A41D0 /* NestWidgetExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
@@ -366,6 +379,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				34174CE02A7FF0DF003A41D0 /* NestWidget.swift in Sources */,
+				3480D7892AAEA69C0050431A /* SampleWidget.swift in Sources */,
 				34174CED2A7FF156003A41D0 /* WidgetBundle.swift in Sources */,
 				34174CE22A7FF0DF003A41D0 /* AppIntent.swift in Sources */,
 				34174CDE2A7FF0DF003A41D0 /* NestWidgetLiveActivity.swift in Sources */,
@@ -378,6 +392,7 @@
 			files = (
 				344514F32A77F2B90023C68D /* ContentView.swift in Sources */,
 				344514F12A77F2B90023C68D /* SwiftNestApp.swift in Sources */,
+				3402025C2B29741200AD348A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -604,7 +619,7 @@
 				DEVELOPMENT_TEAM = TJ87VY5Q8W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = SwiftNest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -634,7 +649,7 @@
 				DEVELOPMENT_TEAM = TJ87VY5Q8W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = SwiftNest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -782,6 +797,10 @@
 		34174CB72A7FEE81003A41D0 /* Nest */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Nest;
+		};
+		34916A8A2AB18C620054F78A /* WidgetSource */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = WidgetSource;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

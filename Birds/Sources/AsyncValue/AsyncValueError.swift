@@ -1,8 +1,8 @@
 import Foundation
 
 
-enum AsyncValueError: Error {
-    case stateError(any AsyncValue)
+enum AsyncValueError<T>: Error {
+    case stateError(AsyncValue<T>)
 
     var message: String {
         switch self {
