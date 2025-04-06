@@ -1,7 +1,7 @@
 import Foundation
 
 
-enum AsyncValueError<T>: Error {
+enum AsyncValueError<T: Sendable>: Error {
     case stateError(AsyncValue<T>)
 
     var message: String {

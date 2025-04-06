@@ -13,7 +13,7 @@ public struct AsyncValueView: View {
                 loading: {
                     return Text("loading")
                 },
-                error: { error, stackTrace in
+                error: { error in
                     return Text("error")
                 }
             )
@@ -27,7 +27,7 @@ public struct AsyncValueView: View {
             }
 
             Button("error") {
-                asyncValue = AsyncValue<Int>.error(error: "error", stackTrace: "stackTrace")
+                asyncValue = AsyncValue<Int>.error(error: NSError())
             }
         }
     }

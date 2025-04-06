@@ -1,3 +1,4 @@
+@MainActor
 public final class Singleton {
     private init() { print("Singleton was initialized") }
 

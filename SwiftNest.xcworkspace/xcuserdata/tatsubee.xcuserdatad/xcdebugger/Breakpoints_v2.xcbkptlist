@@ -82,6 +82,36 @@
             endingLineNumber = "112"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "EB4CEC82-5BB9-4255-A5A8-B15CA117A9CE - b8f1c32ec0d844ba"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #4 @Swift.MainActor @Sendable () -&gt; () in UIKitNav.RootViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "SwiftNest.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tatsubee/develop/GitHub/SwiftNest/Birds/Sources/UIKitNav/Root.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "125"
+                  endingLineNumber = "125">
+               </Location>
+               <Location
+                  uuid = "EB4CEC82-5BB9-4255-A5A8-B15CA117A9CE - b8f1c32ec0d845a2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #4 @Swift.MainActor @Sendable () -&gt; () in UIKitNav.RootViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "SwiftNest.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tatsubee/develop/GitHub/SwiftNest/Birds/Sources/UIKitNav/Root.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "117"
+                  endingLineNumber = "117">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

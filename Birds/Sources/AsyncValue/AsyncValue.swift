@@ -1,24 +1,22 @@
 import Foundation
 
-public class AsyncValue<T> {
-    var value: T?
-    var isLoading: Bool
-    var error: Any?
-    var stackTrace: Any?
-    var hasValue: Bool
+public class AsyncValue<T: Sendable>: @unchecked Sendable {
+    let value: T?
+    let isLoading: Bool
+    let error: Error?
+    let hasValue: Bool
 
-    init(value: T?, isLoading: Bool, error: Any?, stackTrace: Any?, hasValue: Bool) {
+    init(value: T?, isLoading: Bool, error: Error?, hasValue: Bool) {
         self.value = value
         self.isLoading = isLoading
         self.error = error
-        self.stackTrace = stackTrace
         self.hasValue = hasValue
     }
 
     public static func data(_ value: T) -> AsyncData<T> { AsyncData(value) }
     public static func loading() -> AsyncLoading<T> { AsyncLoading() }
-    public static func error(error: Any, stackTrace: Any) -> AsyncError<T> {
-        AsyncError(error: error, stackTrace: stackTrace)
+    public static func error(error: Error) -> AsyncError<T> {
+        AsyncError(error: error)
     }
 
     public static func wrap<W>(with future: (Any...) async throws -> W) async throws -> AsyncValue<W> {
@@ -26,7 +24,7 @@ public class AsyncValue<T> {
             let result = try await future()
             return AsyncData<W>(result)
         } catch let error {
-            return AsyncError<W>(error: error, stackTrace: Thread.callStackSymbols.joined(separator: "\n"))
+            return AsyncError<W>(error: error)
         }
     }
 }
@@ -54,7 +52,7 @@ extension AsyncValue {
     public func when<R>(
         data: (_ data: T) -> R,
         loading: () -> R,
-        error: (_ error: Any, _ stackTrace: Any) -> R,
+        error: (_ error: Error) -> R,
         skipLoadingOnReload: Bool = false,
         skipLoadingOnRefresh: Bool = true,
         skipError: Bool = false
@@ -74,50 +72,44 @@ extension AsyncValue {
         }
 
         if hasError && (!hasValue || !skipError) {
-            return error(self.error!, stackTrace!)
+            return error(self.error!)
         }
 
         return data(requireValue)
     }
 }
 
-public final class AsyncData<T>: AsyncValue<T> {
+public final class AsyncData<T: Sendable>: AsyncValue<T> {
     init(_ value: T) {
         super.init(
             value: value,
             isLoading: false,
             error: nil,
-            stackTrace: nil,
             hasValue: true
         )
     }
-
 }
 
-public final class AsyncLoading<T>: AsyncValue<T> {
+public final class AsyncLoading<T: Sendable>: AsyncValue<T> {
     init() {
         super.init(
             value: nil,
             isLoading: true,
             error: nil,
-            stackTrace: nil,
             hasValue: false
         )
     }
-
 }
 
-public final class AsyncError<T>: AsyncValue<T> {
-    init(error: Any, stackTrace: Any) {
+public final class AsyncError<T: Sendable>: AsyncValue<T> {
+    init(error: Error) {
         super.init(
             value: nil,
             isLoading: false,
             error: error,
-            stackTrace: stackTrace,
             hasValue: false
         )
     }
-
 }
 
 //public protocol AsyncValue {
