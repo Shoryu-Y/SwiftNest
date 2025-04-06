@@ -1,10 +1,3 @@
-//
-//  SwiftUIView.swift
-//  
-//
-//  Created by tatsubee on 2023/12/06.
-//
-
 import SwiftUI
 
 struct SwiftUIView: View {

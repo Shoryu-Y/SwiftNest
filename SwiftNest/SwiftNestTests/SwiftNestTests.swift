@@ -1,10 +1,3 @@
-//
-//  SwiftNestTests.swift
-//  SwiftNestTests
-//
-//  Created by tatsubee on 2023/07/31.
-//
-
 import XCTest
 @testable import SwiftNest
 

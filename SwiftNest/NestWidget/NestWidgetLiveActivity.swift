@@ -1,10 +1,3 @@
-//
-//  NestWidgetLiveActivity.swift
-//  NestWidget
-//
-//  Created by tatsubee on 2023/08/07.
-//
-
 import ActivityKit
 import WidgetKit
 import SwiftUI

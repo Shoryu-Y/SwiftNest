@@ -1,10 +1,3 @@
-//
-//  SwiftUIView.swift
-//  
-//
-//  Created by tatsubee on 2023/12/13.
-//
-
 import Singleton
 import SwiftUI
 

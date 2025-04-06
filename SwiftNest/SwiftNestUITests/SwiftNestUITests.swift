@@ -1,10 +1,3 @@
-//
-//  SwiftNestUITests.swift
-//  SwiftNestUITests
-//
-//  Created by tatsubee on 2023/07/31.
-//
-
 import XCTest
 
 final class SwiftNestUITests: XCTestCase {

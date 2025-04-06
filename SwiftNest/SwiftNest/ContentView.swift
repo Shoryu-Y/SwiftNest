@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  SwiftNest
-//
-//  Created by tatsubee on 2023/07/31.
-//
-
 import SwiftUI
 
 struct ContentView: View {
@@ -38,8 +31,4 @@ struct ContentView: View {
     private func hgoe() throws {
         _ = if .random() { 1.0 } else { throw NSError(domain: "", code: -1) }
     }
-}
-
-#Preview {
-    ContentView()
 }
