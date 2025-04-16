@@ -34,6 +34,8 @@ let package = Package(
                 "Singleton",
                 "Draggable",
                 "UIKitNav",
+                "CustomModifier",
+                "EnvironmentRange",
             ]
         ),
         .target(name: "AsyncValue"),
@@ -54,10 +56,8 @@ let package = Package(
                 .product(name: "ComposableArchitecture", package: "swift-composable-architecture"),
             ]
         ),
-        .testTarget(
-            name: "BirdsTests",
-            dependencies: ["Nest"]
-        ),
+        .target(name: "CustomModifier"),
+        .target(name: "EnvironmentRange"),
     ],
     swiftLanguageModes: [.v6]
 )
