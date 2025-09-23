@@ -1,12 +1,13 @@
 {
+  "originHash" : "a27ca969c1283412d69e01da64ab6f7ad573a400c8cc603b1ac90f403d2a2e89",
   "pins" : [
     {
       "identity" : "charcoal-ios",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/pixiv/charcoal-ios.git",
       "state" : {
-        "revision" : "4c0d45684b917b02d9ed4b9f4cd66072fcc9f3ec",
-        "version" : "2.0.0-beta2"
+        "revision" : "7391e1c68ecb2cf2ffae4aa9bb3c3533e2071347",
+        "version" : "2.1.0"
       }
     },
     {
@@ -16,6 +17,15 @@
       "state" : {
         "revision" : "9fa31f4403da54855f1e2aeaeff478f4f0e40b13",
         "version" : "1.0.2"
+      }
+    },
+    {
+      "identity" : "libffi",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/623637646/libffi.git",
+      "state" : {
+        "revision" : "ba435e5a3b38cf2eede5974d3e2bd3c737f066e1",
+        "version" : "3.4.7"
       }
     },
     {
@@ -127,6 +137,24 @@
       }
     },
     {
+      "identity" : "swifthook",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/623637646/SwiftHook",
+      "state" : {
+        "revision" : "2a6199f90aa2c10cd01b92488639dd246caf277e",
+        "version" : "3.5.3"
+      }
+    },
+    {
+      "identity" : "uienvironment",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/nonameplum/UIEnvironment",
+      "state" : {
+        "revision" : "e221cbe57bcc099a349fd406ec1073985ce5f2aa",
+        "version" : "1.1.0"
+      }
+    },
+    {
       "identity" : "xctest-dynamic-overlay",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/pointfreeco/xctest-dynamic-overlay",
@@ -136,5 +164,5 @@
       }
     }
   ],
-  "version" : 2
+  "version" : 3
 }

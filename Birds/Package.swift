@@ -4,7 +4,7 @@ import PackageDescription
 
 let package = Package(
     name: "Birds",
-    platforms: [.iOS(.v17)],
+    platforms: [.iOS(.v18)],
     products: [
         .library(
             name: "Nest",
@@ -15,34 +15,23 @@ let package = Package(
         )
     ],
     dependencies: [
-        .package(
-            url: "https://github.com/pointfreeco/swift-composable-architecture.git",
-            exact: "1.18.0"
-        ),
-        .package(
-            url: "https://github.com/pixiv/charcoal-ios.git",
-            exact: "2.0.0-beta2"
-        ),
+        .package(url: "https://github.com/pointfreeco/swift-composable-architecture.git", exact: "1.18.0"),
+        .package(url: "https://github.com/pixiv/charcoal-ios.git", exact: "2.1.0"),
+        .package(url: "https://github.com/nonameplum/UIEnvironment", from: "1.1.0"),
     ],
     targets: [
         .target(
             name: "Nest",
             dependencies: [
-                "AsyncValue",
-                "Diff",
-                "Pencil",
-                "Singleton",
-                "Draggable",
-                "UIKitNav",
-                "CustomModifier",
-                "EnvironmentRange",
-            ]
+                "Observe",
+                "Env",
+            ],
+            path: "Sources/_Nest"
         ),
         .target(name: "AsyncValue"),
         .target(name: "Diff"),
         .target(name: "WidgetSource"),
         .target(name: "Pencil"),
-        .target(name: "Singleton"),
         .target(
             name: "UIKitNav",
             dependencies: [
@@ -57,7 +46,15 @@ let package = Package(
             ]
         ),
         .target(name: "CustomModifier"),
-        .target(name: "EnvironmentRange"),
+        .target(
+            name: "Charcomponent",
+            dependencies: [
+                .product(name: "Charcoal", package: "charcoal-ios"),
+            ],
+            resources: [.process("Resources")]
+        ),
+        .target(name: "Observe"),
+        .target(name: "Env"),
     ],
     swiftLanguageModes: [.v6]
 )

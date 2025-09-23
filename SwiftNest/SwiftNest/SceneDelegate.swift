@@ -1,5 +1,4 @@
 import Foundation
-import Singleton
 import UIKit
 
 final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
@@ -9,6 +8,5 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         print("scene: \(scene)")
         print("session: \(session)")
         print("connectionOptions: \(connectionOptions)")
-        Singleton.shared.hoge()
     }
 }
