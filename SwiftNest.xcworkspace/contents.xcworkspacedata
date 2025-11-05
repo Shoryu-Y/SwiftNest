@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:UIKitNest/UIKitNest.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Birds">
    </FileRef>
    <FileRef
