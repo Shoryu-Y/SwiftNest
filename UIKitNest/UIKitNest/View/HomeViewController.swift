@@ -6,5 +6,3 @@ class HomeViewController: UIViewController {
 		view.backgroundColor = .systemBackground
 	}
 }
-
-

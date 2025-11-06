@@ -6,5 +6,3 @@ class SettingsViewController: UIViewController {
 		view.backgroundColor = .secondarySystemBackground
 	}
 }
-
-
